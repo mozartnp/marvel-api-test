@@ -12,6 +12,8 @@ size = 20
 password = "".join(random.sample(chars, size))
 
 CONFIG_STRING = """
+API_KEY=
+
 DEBUG=True
 SECRET_KEY=%s
 ALLOWED_HOSTS=127.0.0.1,.localhost,0.0.0.0
