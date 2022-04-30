@@ -2,10 +2,9 @@ import hashlib
 
 import requests
 from decouple import config
-
+from rich import print
 from rich.console import Console
 from rich.table import Table
-from rich import print
 
 console = Console()
 

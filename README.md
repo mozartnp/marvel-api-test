@@ -79,3 +79,7 @@ pip install -r requirements.txt
 python contrib/env_gen.py
 ```
 
+## Links
+
+* [rich.readthedocs.io](https://rich.readthedocs.io/en/stable/index.html)
+* [docs.python-requests.org](https://docs.python-requests.org/en/latest/)
