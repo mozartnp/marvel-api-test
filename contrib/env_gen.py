@@ -12,7 +12,8 @@ size = 20
 password = "".join(random.sample(chars, size))
 
 CONFIG_STRING = """
-API_KEY=
+PUBLIC_KEY=
+PRIVATE_KEY=
 
 DEBUG=True
 SECRET_KEY=%s
