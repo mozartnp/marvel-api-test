@@ -9,7 +9,7 @@ Leia também https://developer.marvel.com/documentation/authorization
 
 ## Autorização
 
-Gere um token no site da Marvel.
+Gere um apikey no site da Marvel.
 
 ```
 publicKey: 1234
@@ -19,7 +19,7 @@ ts: 1
 
 ts é timestamp
 
-Você precisará de gerar um outro token em md5.
+Você precisará gerar um outro token em md5.
 
 A partir do site https://www.md5hashgenerator.com/ faça a concatenação de
 
