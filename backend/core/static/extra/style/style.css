@@ -1,0 +1,27 @@
+* 
+.botaoVerde{
+    padding-top: 10px; 
+    padding-bottom: 10px;
+}
+
+.botaoVagas{
+    margin-bottom: 10px;
+}
+
+.textoBotaoVagas{
+    color: black;
+}
+
+.botaoConcorrentes{
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-left:  5px;
+}
+
+.textoBotaoConcorrentes{
+    color: black;
+}
+
+.botaoVagasGerenciamento{
+    margin-bottom: 5px;
+}
