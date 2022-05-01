@@ -1,0 +1,23 @@
+<!--Para avisar que a pagina é uma extenção da base.html-->
+{% extends 'base.html' %}
+
+<!--Para carregar os arquivos estaticos na pagina.-->
+{% load static %}
+<!--Bloco que define o titulo na pagina-->
+
+{% block title %}Marvel Api Consume{% endblock %}
+<!--Para indicar qual bloco será inserida no base.html-->
+
+{% block content %}
+
+    <div class="container">
+        <div class="col-lg-9 offset-lg-1">
+            <section>
+                <br>
+                <br>
+                <h2 class="text-center">Site para expor informações dos quadrinhos da marvel.</h2>
+            </section>
+        </div>
+    </div>
+
+{% endblock %}

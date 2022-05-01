@@ -1,0 +1,19 @@
+<!--Para carregar os arquivos estaticos na pagina.-->
+{% load static %}
+
+<section data-info="navbar-login-cadastro">
+    <div class="container">
+        <div class="col-lg-9 offset-lg-1">
+            <nav class="navbar navbar-expand-sm bg-light navbar-light">
+                <ul class="navbar-nav">
+                    <div class="nav-item" style="margin-left: 10px;" data-info="botaoCadastro">
+                        <a class="btn btn-outline-success" role="button" href="{% url 'core:index' %}">Home Page</a>
+                    </div>
+                    <div class="nav-item" style="margin-left: 10px;" data-info="botaoCadastro">
+                        <a class="btn btn-outline-success" role="button" href="{% url 'core:personagens' %}">Personagens</a>
+                    </div>              
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>

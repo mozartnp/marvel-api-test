@@ -1,0 +1,47 @@
+<!--Para avisar que a pagina é uma extenção da base.html-->
+{% extends 'base.html' %}
+
+<!--Para carregar os arquivos estaticos na pagina.-->
+{% load static %}
+<!--Bloco que define o titulo na pagina-->
+
+{% block title %}Personagens Marvel{% endblock %}
+<!--Para indicar qual bloco será inserida no base.html-->
+
+{% block content %}
+
+    <div class="container">
+        <div class="col-lg-9 offset-lg-1">
+            <section>
+                <br>
+                <br>
+                <h2 class="text-center">Procure informações sobre os personagens.</h2>
+            </section>
+            <hr>
+            <form method="post" class="row justify-content-center" action="." >
+                {% csrf_token %}
+                <h3 class="text-center" data-info="textoLogin">Pesquisa de personagem individualmente.</h3>
+                <div class="row">
+                    <div class="form-group col-lg-9">
+                        <label for="pequeisaPersonagemInput">Nome do personagem</label>
+                        <input type="text" class="form-control" id="pequeisaPersonagemInput" aria-describedby="pequeisaPersonagemHelp" placeholder="Digite o nome do personagem">
+                        <small id="pequeisaPersonagemHelp" class="form-text text-muted">Por favor digite o nome do personagem em ingles.</small>
+                    </div>
+                    <div class="col-sm-2 botaoVerde" style="margin-top: 15px;" >
+                        <button name="pesquisaunica" class="w-100 btn btn-outline-primary" type="submit">Pesquisar</button>
+                    </div>
+                </div>
+            </form>
+            <hr>
+            <form method="post" class="row justify-content-center" action="." >
+                {% csrf_token %}
+                <h3 class="text-center" data-info="textoLogin">Lista de personagens.</h3>
+                <div class="w-100"></div>
+                <div class="col-sm-2 botaoVerde">
+                    <button name="pesquisalista" class="w-100 btn btn-outline-primary" type="submit">Pesquisar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}
