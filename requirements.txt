@@ -2,3 +2,4 @@ python-decouple==3.6
 requests==2.27.1
 ipdb
 rich==12.3.0
+Django==4.0.*
